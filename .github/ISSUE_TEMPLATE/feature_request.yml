@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an improvement or a capability you'd like Legend to have.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The friction first — what's in your way. The problem, not the solution yet.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: The change you have in mind, if you have one. Optional.
+  - type: markdown
+    attributes:
+      value: |
+        A note on scope, so we can be honest about fit: Legend is a neutral
+        markdown editor — every `.md` is just a file, no schema, no opinion about
+        what your notes are for. Ideas that keep that neutrality fit well.
+        Schema- or agent-flavored ideas usually belong in tools built on top of
+        Legend rather than in the editor itself.

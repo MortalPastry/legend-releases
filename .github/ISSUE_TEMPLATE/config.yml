@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Email support
+    url: mailto:support@alegend.io
+    about: Prefer email, or want to report something you'd rather not post publicly? Write to support@alegend.io.
+  - name: FAQ
+    url: https://github.com/MortalPastry/legend-releases#faq
+    about: Installing, opening a vault, keyboard basics — common questions answered.
+  - name: Releases & downloads
+    url: https://github.com/MortalPastry/legend-releases/releases
+    about: Download the latest Legend build.

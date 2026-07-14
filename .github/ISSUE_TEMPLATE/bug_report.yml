@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in Legend isn't working the way it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. A precise repro is the fastest path to a fix.
+        If you opened this from Legend's **Report a bug** dialog, the version,
+        OS, and vault-size fields are already filled in for you.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        1. Opened a vault with …
+        2. Pressed …
+        3. Expected … but got …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Legend version
+      description: In the Report a bug dialog, or under Settings.
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: e.g. Windows 10/11, macOS 14, Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: vault-size
+    attributes:
+      label: Vault size (number of files)
+      description: Roughly how many files were in the open vault. Report a bug fills this in.
+      placeholder: e.g. 1240
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or error text
+      description: Paste any console output or error message. Rendered as code — no formatting needed.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and didn't find a duplicate.
+          required: true
